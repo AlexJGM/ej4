@@ -9,7 +9,12 @@ $numeros = array();
 for ($i = 0; $i <= 10;$i++) {
     $random = rand(1,200);
     $numeros[$i] = $random;
-    
+    echo $numeros[$i] . "<br>";
 }
+print_r($numeros);
 
+for ($i = count($numeros)-1;$i >=0;$i--) {
+    echo "<br>" . $numeros[$i];
+
+}
 ?>
